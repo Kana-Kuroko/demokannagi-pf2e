@@ -1,0 +1,91 @@
+{
+  "id": "kannagidemo",
+  "title": "Kannagi Demo",
+  "description": "A demo module for the Kannagi class.",
+  "version": "1.0",
+  "authors": [
+    {"name": "Kana Kuroko"}
+  ],
+  "compatibility": {
+    "minimum": "10.265",
+    "verified": "10.265"
+  },
+  "relationships": {
+    "systems": [{
+      "id": "pf2e",
+      "type": "system",
+      "manifest": "https://github.com/foundryvtt/pf2e/releases/latest/download/system.json",
+      "compatibility": {
+        "minimum": "4.2.6"
+      }
+    }]
+  },
+  "packs": [
+    {
+      "label": "Demo Kannagi - Feats",
+      "type": "Item",
+      "name": "kannagidemo-feats",
+      "path": "./packs/kannagidemo-feats.db",
+      "system": "pf2e",
+      "package": "kannagidemo",
+      "private": false
+    },
+    {
+      "label": "Demo Kannagi - Spells",
+      "type": "Item",
+      "name": "kannagidemo-spells",
+      "path": "./packs/kannagidemo-spells.db",
+      "system": "pf2e",
+      "package": "kannagidemo",
+      "private": false
+    },
+    {
+      "label": "Demo Kannagi - Class",
+      "type": "Item",
+      "name": "kannagidemo-class",
+      "path": "./packs/kannagidemo-class.db",
+      "system": "pf2e",
+      "package": "kannagidemo",
+      "private": false
+    },
+    {
+      "label": "Demo Kannagi - Actions",
+      "type": "Item",
+      "name": "kannagidemo-actions",
+      "path": "./packs/kannagidemo-actions.db",
+      "system": "pf2e",
+      "package": "kannagidemo",
+      "private": false
+    },
+    {
+      "label": "Demo Kannagi - Class Features",
+      "type": "Item",
+      "name": "kannagidemo-classfeatures",
+      "path": "./packs/kannagidemo-classfeatures.db",
+      "system": "pf2e",
+      "package": "kannagidemo",
+      "private": false
+    },
+    {
+      "label": "Demo Kannagi - Equipment",
+      "type": "Item",
+      "name": "kannagidemo-equipment",
+      "path": "./packs/kannagidemo-equipment.db",
+      "system": "pf2e",
+      "package": "kannagidemo",
+      "private": false
+    }
+	],
+  "flags": {
+      "kannagi": {
+	"kannagi": {
+	 "featTraits": {
+	  "kannagi": "Kannagi"
+         },
+	 "spellTraits": { 
+	  "kannagi": "Kannagi"
+	 }
+    }
+  }
+ }
+}
